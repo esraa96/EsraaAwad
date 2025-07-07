@@ -3,10 +3,10 @@ import SkillsGrid from "../components/SkillsGrid";
 
 const Skills = () => {
     return (
-        <div className="py-8">
+        <main className="container mx-auto px-8 pt-20">
            
             <SkillsGrid />
-        </div>
+        </main>
     );
 };
 

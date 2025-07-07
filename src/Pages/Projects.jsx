@@ -13,19 +13,17 @@ const Projects = () => {
   return (
     <section
       ref={containerRef}
-      className="relative"
-      // نعطي الحاوية ارتفاعاً كافياً لعملية التمرير
-      style={{ height: `${PROJECTS.length * 100}vh` }}
+      className="relative snap-y snap-mandatory overflow-y-scroll h-screen"
+      style={{ scrollSnapType: "y mandatory" }}
     >
-      <div className="sticky top-24 z-10 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 to-fuchsia-500 bg-clip-text text-transparent mb-12">
+      <div className="sticky top-0 z-10 bg-gray-900/90 backdrop-blur py-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-center bg-gradient-to-r from-pink-400 to-fuchsia-500 bg-clip-text text-transparent">
           My Projects
         </h1>
       </div>
 
       {PROJECTS.map((project, i) => {
         const targetScale = 1 - (PROJECTS.length - i - 1) * 0.05;
-        // هنا نحسب نطاق الحركة لكل بطاقة
         const range = [i / PROJECTS.length, (i + 1) / PROJECTS.length];
 
         return (
@@ -34,8 +32,9 @@ const Projects = () => {
             project={project}
             i={i}
             progress={scrollYProgress}
-            range={range} // نمرر النطاق الصحيح هنا
+            range={range}
             targetScale={targetScale}
+            total={PROJECTS.length}
           />
         );
       })}

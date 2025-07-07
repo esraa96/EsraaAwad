@@ -2,9 +2,9 @@ import Hero from "../components/Hero";
 
 const Home = () => {
     return (
-        <div>
+        <main className="container mx-auto px-8 pt-20">
             <Hero />
-        </div>
+        </main>
     );
 };
 

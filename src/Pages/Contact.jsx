@@ -84,6 +84,7 @@ const Contact = () => {
   };
 
   return (
+       <main className="container mx-auto px-8 pt-20">
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -143,6 +144,7 @@ const Contact = () => {
         </div>
       </div>
     </motion.section>
+    </main>
   );
 };
 

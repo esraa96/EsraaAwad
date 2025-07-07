@@ -4,6 +4,7 @@ import EducationCard from "../components/EducationCard";
 
 const Education = () => {
     return (
+            <main className="container mx-auto px-8 pt-20">
         <section className="min-h-screen relative py-20 md:py-32">
             <div className="max-w-6xl mx-auto px-4 relative z-10">
                 <motion.div
@@ -27,6 +28,7 @@ const Education = () => {
                 </div>
             </div>
         </section>
+        </main>
     );
 };
 
