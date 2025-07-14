@@ -39,7 +39,7 @@ const FloatingPill = ({ icon, text, position, animation }) => (
 const Hero = () => {
   const codeString = `const profile = {
   name: "Esraa Awad",
-  title: "Full-Stack Developer",
+  title: "Frontend and Cross Platforms Developer",
   skills: ["React", "Node.js", "SQL", "TypeScript"],
   isAvailable: true,
   hire: function() {
