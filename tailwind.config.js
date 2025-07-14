@@ -14,7 +14,7 @@ animation: {
   'gradient-x': 'gradient-x 3s linear infinite',
   'meteor': 'meteor 5s linear infinite',
   'grid-pulse': 'grid-pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-  // التعديل هنا: قمنا بتوحيد الاسمين إلى اسم واحد فقط
+
   'float': 'float 6s ease-in-out infinite',
 },
 // ...
@@ -40,5 +40,22 @@ animation: {
     },
   },
   
-  plugins: [],
+   plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.perspective': {
+          perspective: '1000px',
+        },
+        '.preserve-3d': {
+          'transform-style': 'preserve-3d',
+        },
+        '.backface-hidden': {
+          'backface-visibility': 'hidden',
+        },
+        '.rotate-y-180': {
+          transform: 'rotateY(180deg)',
+        },
+      })
+    }
+  ],
 }

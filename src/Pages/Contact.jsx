@@ -84,66 +84,118 @@ const Contact = () => {
   };
 
   return (
-       <main className="container mx-auto px-8 pt-20">
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="py-16 md:py-24"
-    >
-      <div className="grid lg:grid-cols-2 gap-12 items-start">
-        {/* Left Column: Contact Info */}
-        <div className="space-y-8">
-          <div>
-            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Get in Touch
-            </h2>
-            <p className="text-gray-300 text-lg">
-              Have a question or want to work together? Drop me a message!
-            </p>
-          </div>
-          
-          {/* هذا هو الجزء الذي كان ناقصاً */}
-          <div className="space-y-6">
-            {contactInfo.map((item, index) => (
-                <a href={item.href} key={index} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 group">
-                    <div className={`${item.bgColor} p-3 rounded-lg transition-transform duration-300 group-hover:scale-110`}>
-                        {item.icon}
-                    </div>
-                    <div>
-                        <h3 className="font-semibold text-white">{item.title}</h3>
-                        <p className="text-gray-400 group-hover:text-cyan-400 transition-colors">{item.detail}</p>
-                    </div>
-                </a>
-            ))}
-          </div>
-        </div>
+    <main className="container mx-auto px-8 pt-20">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="py-16 md:py-24"
+      >
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="space-y-8">
+            <div>
+              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                Get in Touch
+              </h2>
+              <p className="text-gray-300 text-lg">
+                Have a question or want to work together? Drop me a message!
+              </p>
+            </div>
 
-        {/* Right Column: Contact Form */}
-        <div className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl shadow-xl border border-slate-800">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* ... حقول النموذج ... */}
-            <div>
-              <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors" required />
+            <div className="space-y-6">
+              {contactInfo.map((item, index) => (
+                <a
+                  href={item.href}
+                  key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4 group"
+                >
+                  <div
+                    className={`${item.bgColor} p-3 rounded-lg transition-transform duration-300 group-hover:scale-110`}
+                  >
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white">{item.title}</h3>
+                    <p className="text-gray-400 group-hover:text-cyan-400 transition-colors">
+                      {item.detail}
+                    </p>
+                  </div>
+                </a>
+              ))}
             </div>
-            <div>
-              <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors" required />
-            </div>
-            <div>
-              <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors" />
-            </div>
-            <div>
-              <textarea name="message" placeholder="Your Message" rows="4" value={formData.message} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors resize-none" required></textarea>
-            </div>
-            <button type="submit" disabled={isLoading} className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:opacity-90 transition-opacity disabled:opacity-50">
+          </div>
+
+          {/*  Contact Form */}
+          <div className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl shadow-xl border border-slate-800">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows="4"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors resize-none"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="w-full bg-gradient-to-r from-purple-400 to-pink-500 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:opacity-90 transition-all duration-300 disabled:opacity-50 hover:shadow-[0_0_25px_rgba(236,72,153,0.5)]"
+              >
                 <span>{isLoading ? "Sending..." : "Send Message"}</span>
                 {!isLoading && <Send className="w-4 h-4" />}
-            </button>
-            {formStatus && <p className={`text-center mt-4 text-sm ${formStatus.includes("Failed") ? "text-red-400" : "text-green-400"}`}>{formStatus}</p>}
-          </form>
+              </button>
+              {formStatus && (
+                <p
+                  className={`text-center mt-4 text-sm ${
+                    formStatus.includes("Failed")
+                      ? "text-red-400"
+                      : "text-green-400"
+                  }`}
+                >
+                  {formStatus}
+                </p>
+              )}
+            </form>
+          </div>
         </div>
-      </div>
-    </motion.section>
+      </motion.section>
     </main>
   );
 };

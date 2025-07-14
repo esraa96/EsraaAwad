@@ -5,10 +5,10 @@ const SkillCard = ({ icon, category, skills }) => {
         <motion.div 
             whileHover={{ 
                 y: -8, 
-                // Changed the glow color to pink
+              
                 boxShadow: "0px 10px 30px rgba(244, 114, 182, 0.2)" 
             }}
-            className="bg-gray-800/50 p-6 rounded-2xl border border-pink-500/20 h-full transition-colors duration-300 hover:border-pink-400"
+            className="bg-gray-800/50 p-6 rounded-2xl border border-pink-500/20 h-full transition-colors duration-300 hover:border-pink-400  hover:opacity-90 "
         >
             <div className="flex items-center gap-4 mb-6">
                 {/* Changed the main icon color to pink */}

@@ -17,7 +17,10 @@ import {
   FaSitemap,
   FaCodeBranch,
   FaBootstrap,
-  
+   FaMobileAlt,
+     FaGithub,   // Add this
+  FaSyncAlt,  // Add this
+   
   
 } from "react-icons/fa";
 import {
@@ -38,8 +41,9 @@ import {
   SiVercel,
   SiKubernetes,
   SiJenkins,
-
-
+ SiReact,
+  SiExpo,
+SiNextdotjs 
 
 } from "react-icons/si";
 import { TbBrandCSharp, TbApi } from "react-icons/tb";
@@ -56,6 +60,7 @@ export const SKILLS_DATA = [
         name: "JavaScript",
         icon: <SiJavascript className="text-yellow-400" />,
       },
+        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
       { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
       {
         name: "Tailwind CSS",
@@ -64,6 +69,16 @@ export const SKILLS_DATA = [
       { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600" /> },
       { name: "HTML5", icon: <SiHtml5 className="text-orange-600" /> },
       { name: "CSS3", icon: <SiCss3 className="text-blue-600" /> },
+    ],
+  },
+  {
+    category: "Cross Platform Development",
+    icon: <FaMobileAlt />,
+    skills: [
+      { name: "React", icon: <FaReact className="text-sky-500" /> },
+      { name: "React Native", icon: <SiReact className="text-blue-400" /> },
+      { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
+      { name: "Expo", icon: <SiExpo className="text-white" /> },
     ],
   },
   {
@@ -93,6 +108,10 @@ export const SKILLS_DATA = [
     icon: <FaTools />,
     skills: [
      
+    { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
+      { name: "GitHub", icon: <FaGithub className="text-white" /> },
+      { name: "Source Control", icon: <FaCodeBranch className="text-gray-400" /> },
+      { name: "Agile", icon: <FaSyncAlt className="text-blue-400" /> },
       { name: "Jest", icon: <SiJest className="text-red-600" /> },
       { name: "Webpack", icon: <SiWebpack className="text-sky-600" /> },
       { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
