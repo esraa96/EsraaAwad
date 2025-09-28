@@ -84,25 +84,25 @@ const Contact = () => {
   };
 
   return (
-    <main className="container mx-auto px-8 pt-32">
+    <main className="container mx-auto px-4 md:px-8 pt-20 md:pt-24">
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="py-16 md:py-24"
+        className="py-8 md:py-16 lg:py-24 min-h-screen flex flex-col"
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div className="space-y-8">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start flex-1">
+          <div className="space-y-6 md:space-y-8 lg:block hidden">
             <div>
-              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Get in Touch
               </h2>
-              <p className="text-gray-300 text-lg">
+              <p className="text-gray-300 text-base md:text-lg">
                 Have a question or want to work together? Drop me a message!
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               {contactInfo.map((item, index) => (
                 <a
                   href={item.href}
@@ -127,9 +127,19 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* Mobile Header */}
+          <div className="lg:hidden mb-6">
+            <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-center">
+              Get in Touch
+            </h2>
+            <p className="text-gray-300 text-center">
+              Drop me a message!
+            </p>
+          </div>
+
           {/*  Contact Form */}
-          <div className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl shadow-xl border border-slate-800">
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="backdrop-blur-lg bg-white/5 p-4 md:p-8 rounded-2xl shadow-xl border border-slate-800 lg:col-span-1 col-span-full flex-1 flex flex-col">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6 flex-1 flex flex-col">
               <div>
                 <input
                   type="text"
@@ -162,14 +172,14 @@ const Contact = () => {
                   className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors"
                 />
               </div>
-              <div>
+              <div className="flex-1">
                 <textarea
                   name="message"
                   placeholder="Your Message"
-                  rows="4"
+                  rows="6"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors resize-none"
+                  className="w-full h-full min-h-[120px] md:min-h-[150px] px-4 py-3 rounded-lg bg-white/5 border border-gray-700 focus:border-cyan-500 focus:outline-none transition-colors resize-none"
                   required
                 ></textarea>
               </div>
@@ -194,6 +204,31 @@ const Contact = () => {
               )}
             </form>
           </div>
+        </div>
+        
+        {/* Mobile Contact Info */}
+        <div className="lg:hidden mt-8 grid grid-cols-2 gap-4">
+          {contactInfo.map((item, index) => (
+            <a
+              href={item.href}
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center space-y-2 group p-4 rounded-lg bg-white/5 border border-slate-800"
+            >
+              <div
+                className={`${item.bgColor} p-3 rounded-lg transition-transform duration-300 group-hover:scale-110`}
+              >
+                {item.icon}
+              </div>
+              <div className="text-center">
+                <h3 className="font-semibold text-white text-sm">{item.title}</h3>
+                <p className="text-gray-400 group-hover:text-cyan-400 transition-colors text-xs">
+                  {item.detail}
+                </p>
+              </div>
+            </a>
+          ))}
         </div>
       </motion.section>
     </main>

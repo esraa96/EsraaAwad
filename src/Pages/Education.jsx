@@ -4,9 +4,9 @@ import EducationCard from "../components/EducationCard";
 
 const Education = () => {
     return (
-            <main className="container mx-auto px-8 pt-32">
+            <main className="w-full px-4 sm:container sm:mx-auto sm:px-8 pt-24">
         <section className="min-h-screen relative py-20 md:py-32">
-            <div className="max-w-6xl mx-auto px-4 relative z-10">
+            <div className="w-full max-w-none sm:max-w-6xl mx-auto px-0 sm:px-4 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -21,9 +21,11 @@ const Education = () => {
                     </p>
                 </motion.div>
                 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+                <div className="flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-6 lg:gap-8">
                     {EDUCATION_DATA.map((item, index) => (
-                        <EducationCard key={index} item={item} />
+                        <div key={index} className={`${index === 2 ? 'lg:col-span-2 lg:max-w-md lg:mx-auto' : ''}`}>
+                            <EducationCard item={item} />
+                        </div>
                     ))}
                 </div>
             </div>

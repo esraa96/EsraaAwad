@@ -3,7 +3,7 @@ import AboutSection  from "../components/AboutSection";
 
 const Home = () => {
     return (
-        <main className="container mx-auto px-8 pt-32">
+        <main className="container mx-auto px-8 pt-24">
             <Hero />
              <AboutSection /> 
         </main>

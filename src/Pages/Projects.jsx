@@ -53,7 +53,7 @@ export default function Projects() {
         ))}
       </div>
 
-      <section className="text-white w-full bg-slate-950/50 relative backdrop-blur-sm py-20 pt-32">
+      <section className="text-white w-full bg-slate-950/50 relative backdrop-blur-sm py-20 pt-24">
         <div className="container mx-auto px-6">
           <motion.h1 
             className="text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
