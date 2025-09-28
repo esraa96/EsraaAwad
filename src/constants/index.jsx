@@ -75,6 +75,7 @@ export const SKILLS_DATA = [
     category: "Cross Platform Development",
     icon: <FaMobileAlt />,
     skills: [
+      { name: "Flutter", icon: <FaMobileAlt className="text-blue-500" /> },
       { name: "React", icon: <FaReact className="text-sky-500" /> },
       { name: "React Native", icon: <SiReact className="text-blue-400" /> },
       { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
@@ -142,29 +143,38 @@ export const SKILLS_DATA = [
 
 export const PROJECTS = [
   {
-    title: "E-commerce Website",
+    title: "Petut Care",
     image: "/projects/p1.jpg",
     description:
-      "A fully functional e-commerce platform with features like product catalog, shopping cart, and user authentication.",
-    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      "A comprehensive pet care management system for tracking pet health, appointments, and wellness activities.",
+    technologies: ["React", "Firebase", "Tailwind CSS", "Framer Motion"],
     liveLink: "#",
     githubLink: "#",
   },
   {
-    title: "Task Management App",
+    title: "Cinema Hub",
     image: "/projects/p2.jpg",
     description:
-      "An application for managing tasks and projects, allowing users to create, update, and track their to-do lists.",
-    technologies: ["React", "Firebase", "Framer Motion"],
+      "A movie discovery platform built with React and Tailwind CSS that fetches movies from API and displays them with detailed information and ratings.",
+    technologies: ["React", "Tailwind CSS", "Movie API", "JavaScript"],
     liveLink: "#",
     githubLink: "#",
   },
   {
-    title: "Portfolio Website",
+    title: "Fashion E-commerce",
     image: "/projects/p3.jpg",
     description:
-      "A personal portfolio website to showcase skills, projects, and experience, built with modern web technologies.",
-    technologies: ["React", "Three.js", "Tailwind CSS"],
+      "A modern e-commerce platform for clothing sales built with React and Tailwind CSS, featuring product catalog, shopping cart, and secure checkout.",
+    technologies: ["React", "Tailwind CSS", "JavaScript", "Local Storage"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Animated Portfolio",
+    image: "/projects/p4.jpg",
+    description:
+      "A modern animated portfolio website showcasing skills, projects, and experience with smooth animations and responsive design.",
+    technologies: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
     liveLink: "#",
     githubLink: "#",
   },
@@ -193,19 +203,20 @@ export const EDUCATION_DATA = [
     institution: "ITI",
     date: "2025",
     description:
-      "Intensive training on building modern, responsive web interfaces and native mobile applications for both iOS and Android from a single codebase.",
+      "Intensive training on building modern, responsive web interfaces and cross-platform mobile applications using cutting-edge frameworks and tools.",
     achievements: [
       { icon: <Award />, text: "Subject: Front-End & Mobile Cross-Platform" },
     ],
     tags: [
+      "Flutter",
+      "Next.js",
+      "Firebase",
+      "MUI",
+      "Git & GitHub",
       "React",
-      "React Native",
-      "JavaScript (ES6+)",
-      "TypeScript",
       "HTML5",
       "CSS3",
-      "Tailwind CSS",
-      "Git",
+      "JavaScript",
     ],
   },
   {

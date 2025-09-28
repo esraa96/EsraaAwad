@@ -30,7 +30,7 @@ const contactInfo = [
     icon: <FaWhatsapp className="w-6 h-6 text-green-400" />,
     title: "WhatsApp",
     detail: "+20 1144172992",
-    href: "https://wa.me/201144172992",
+     href: "https://wa.me/201144172992",
     bgColor: "bg-green-500/10",
   },
 ];
@@ -84,7 +84,7 @@ const Contact = () => {
   };
 
   return (
-    <main className="container mx-auto px-8 pt-20">
+    <main className="container mx-auto px-8 pt-32">
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

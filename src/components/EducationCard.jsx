@@ -9,39 +9,39 @@ const EducationCard = ({ item }) => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             
-            // هذا هو الجزء الذي تمت إضافته وتعديله
+           
             whileHover={{ 
-                y: -10, // تحريك البطاقة للأعلى بمقدار 10 بكسل
-                boxShadow: "0px 0px 25px rgba(244, 114, 182, 0.5)" // إضافة التوهج
+                y: -10, 
+                boxShadow: "0px 0px 25px rgba(244, 114, 182, 0.5)" 
             }}
             
-            // تم حذف كلاسات الـ hover من هنا ووضعها في whileHover
-            className="relative border rounded-xl p-8 transition-colors duration-300 bg-gray-900/50 backdrop-blur-sm border-pink-400/20 h-full hover:border-pink-400"
+        
+            className="relative border rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 transition-colors duration-300 bg-gray-900/50 backdrop-blur-sm border-pink-400/20 h-full hover:border-pink-400 w-full"
         >
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
                 <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                        <span className="text-3xl text-pink-300">{item.icon}</span>
-                        <h3 className="text-2xl font-bold text-white">{item.title}</h3>
+                    <div className="flex items-start sm:items-center gap-2 sm:gap-3">
+                        <span className="text-2xl sm:text-3xl text-pink-300 flex-shrink-0">{item.icon}</span>
+                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight">{item.title}</h3>
                     </div>
-                    <p className="text-lg text-gray-300 flex items-center gap-2">
+                    <p className="text-sm sm:text-base md:text-lg text-gray-300 flex items-center gap-2">
                         {item.institution}
                     </p>
-                    <p className="text-gray-400 flex items-center gap-2">
+                    <p className="text-xs sm:text-sm text-gray-400 flex items-center gap-2">
                         <Calendar className="w-4 h-4" /> {item.date}
                     </p>
                 </div>
-                <p className="text-gray-300 text-sm italic border-l-2 border-pink-500 pl-3">
+                <p className="text-gray-300 text-xs sm:text-sm italic border-l-2 border-pink-500 pl-3 leading-relaxed">
                     {item.description}
                 </p>
                 {item.achievements && item.achievements.length > 0 && (
                     <div className="space-y-3">
-                        <h4 className="text-sm font-semibold text-white flex items-center gap-2">
+                        <h4 className="text-xs sm:text-sm font-semibold text-white flex items-center gap-2">
                             <Trophy className="w-4 h-4 text-yellow-500" /> Key Achievements
                         </h4>
                         <div className="flex flex-wrap gap-2">
                             {item.achievements.map((ach, index) => (
-                                <div key={index} className="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 flex items-center gap-2 text-sm">
+                                <div key={index} className="px-2 sm:px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
                                     {ach.icon}
                                     <span>{ach.text}</span>
                                 </div>
