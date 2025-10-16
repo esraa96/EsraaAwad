@@ -27,7 +27,7 @@ const AboutSection = () => {
                             
                             
                             <img 
-                                src="/profile-pic.jpg" 
+                                src="/Image/nbvcxsdr345679iuyu.jpg" 
                                 className="rounded-xl shadow-lg block" 
                                 alt="Esraa Awad" 
                             />
@@ -42,10 +42,10 @@ const AboutSection = () => {
                         className="space-y-4"
                     >
                         <p className="text-lg text-gray-300">
-                            Hello! I'm Esraa Awad, a passionate developer with experience in building robust and user-friendly web applications. Skilled in front-end and back-end technologies, I enjoy turning complex problems into beautiful and intuitive digital experiences.
+                            Hello! I'm Esraa Awad, a passionate developer with experience in building robust and user-friendly web and mobile applications. Skilled in front-end, web and mobile technologies with knowledge of back-end technologies, I enjoy turning complex problems into beautiful and intuitive digital experiences.
                         </p>
                         <p className="text-gray-400">
-                            My focus is on making web development faster, easier, and more accessible. I'm currently expanding my skills in cross-platform development to grow as a full-stack developer and create seamless, high-performance applications.
+                            My focus is on making web and mobile development faster, easier, and more accessible. I'm currently expanding my skills in cross-platform development to grow as a full-stack developer and create seamless, high-performance applications.
                         </p>
                         <div className="pt-6">
                             <blockquote className="border-l-4 border-pink-500 pl-4">
