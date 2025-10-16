@@ -40,7 +40,7 @@ const Hero = () => {
   const codeString = `const profile = {
   name: "Esraa Awad",
   title: "Frontend and Cross Platforms Developer",
-  skills: ["React", "Node.js", "SQL", "TypeScript"],
+skills: ["HTML&CSS","JavaScript","React.js","Next.js","Flutter","Tailwind&Bootstrap"],
   isAvailable: true,
   hire: function() {
     if(this.isAvailable) {
@@ -135,7 +135,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#contact"
+                href="https://github.com/esraa96"
                 className="group relative inline-flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 to-fuchsia-500 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#f472b6]"
               >
                 <span className="block w-full text-center px-8 py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-transparent">

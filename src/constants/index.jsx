@@ -86,12 +86,14 @@ export const SKILLS_DATA = [
     category: "Software Fundamentals",
     icon: <FaCogs />,
     skills: [
+      
       { name: "Algorithms", icon: <FaSitemap className="text-gray-400" /> },
+       { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500" /> },
+      { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
       { name: "Data Structures", icon: <FaCodeBranch className="text-gray-400" /> },
       { name: "OOP", icon: <FaCodeBranch className="text-gray-400" /> },
       { name: "SQL", icon: <FaDatabase className="text-red-500" /> },
-      { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500" /> },
-      { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
+     
     ],
   },
   {
@@ -144,39 +146,48 @@ export const SKILLS_DATA = [
 export const PROJECTS = [
   {
     title: "Petut Care",
-    image: "/projects/p1.jpg",
+    image: "src/assets/images/petut.,.,..png",
     description:
       "A comprehensive pet care management system for tracking pet health, appointments, and wellness activities.",
     technologies: ["React", "Firebase", "Tailwind CSS", "Framer Motion"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://project-petut.vercel.app/",
+    githubLink: "https://github.com/esraa96/project-petut",
+  },
+  {
+    title: "Petut Care APP",
+    image: "src/assets/images/app.jpg",
+    description:
+      "A comprehensive pet care management system for tracking pet health, appointments, and wellness activities.",
+    technologies: ["React", "Firebase", "Tailwind CSS", "Framer Motion"],
+    liveLink: "https://drive.google.com/file/d/1hrMoP4HkhQCq76f4UKpKnnTqG9vNyUIL/view?usp=sharing",
+    githubLink: "https://github.com/ziad7411/Petut",
   },
   {
     title: "Cinema Hub",
-    image: "/projects/p2.jpg",
+    image: "src/assets/images/filmmm.png",
     description:
       "A movie discovery platform built with React and Tailwind CSS that fetches movies from API and displays them with detailed information and ratings.",
     technologies: ["React", "Tailwind CSS", "Movie API", "JavaScript"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://cinma-hub-r.vercel.app/",
+    githubLink: "https://github.com/esraa96/CinmaHubR",
   },
   {
     title: "Fashion E-commerce",
-    image: "/projects/p3.jpg",
+    image: "src/assets/images/1122222222222234445678.png",
     description:
       "A modern e-commerce platform for clothing sales built with React and Tailwind CSS, featuring product catalog, shopping cart, and secure checkout.",
     technologies: ["React", "Tailwind CSS", "JavaScript", "Local Storage"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://e-commerce-react-8aba.vercel.app/",
+    githubLink: "https://github.com/esraa96/e-commerce-React",
   },
   {
     title: "Animated Portfolio",
-    image: "/projects/p4.jpg",
+    image: "src/assets/images/portfolio-23 .png",
     description:
       "A modern animated portfolio website showcasing skills, projects, and experience with smooth animations and responsive design.",
     technologies: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://esraa-awad.vercel.app/",
+    githubLink: "https://github.com/esraa96/EsraaAwad",
   },
 ];
 export const EDUCATION_DATA = [
@@ -208,15 +219,14 @@ export const EDUCATION_DATA = [
       { icon: <Award />, text: "Subject: Front-End & Mobile Cross-Platform" },
     ],
     tags: [
-      "Flutter",
+      "HTML5&CSS",
+     "javascript",
+     "React.js",
       "Next.js",
       "Firebase",
       "MUI",
       "Git & GitHub",
-      "React",
-      "HTML5",
-      "CSS3",
-      "JavaScript",
+       "Flutter",
     ],
   },
   {
