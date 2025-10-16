@@ -146,7 +146,7 @@ export const SKILLS_DATA = [
 export const PROJECTS = [
   {
     title: "Petut Care",
-    image: "src/assets/images/petut.,.,..png",
+    image: "../images/petut.,.,..png",
     description:
       "A comprehensive pet care management system for tracking pet health, appointments, and wellness activities.",
     technologies: ["React", "Firebase", "Tailwind CSS", "Framer Motion"],
@@ -155,7 +155,7 @@ export const PROJECTS = [
   },
   {
     title: "Petut Care APP",
-    image: "src/assets/images/app.jpg",
+    image: "../images/app.jpg",
     description:
       "A comprehensive pet care management system for tracking pet health, appointments, and wellness activities.",
     technologies: ["React", "Firebase", "Tailwind CSS", "Framer Motion"],
@@ -164,7 +164,7 @@ export const PROJECTS = [
   },
   {
     title: "Cinema Hub",
-    image: "src/assets/images/filmmm.png",
+    image: "../images/filmmm.png",
     description:
       "A movie discovery platform built with React and Tailwind CSS that fetches movies from API and displays them with detailed information and ratings.",
     technologies: ["React", "Tailwind CSS", "Movie API", "JavaScript"],
@@ -173,7 +173,7 @@ export const PROJECTS = [
   },
   {
     title: "Fashion E-commerce",
-    image: "src/assets/images/1122222222222234445678.png",
+    image: "../images/1122222222222234445678.png",
     description:
       "A modern e-commerce platform for clothing sales built with React and Tailwind CSS, featuring product catalog, shopping cart, and secure checkout.",
     technologies: ["React", "Tailwind CSS", "JavaScript", "Local Storage"],
@@ -182,7 +182,7 @@ export const PROJECTS = [
   },
   {
     title: "Animated Portfolio",
-    image: "src/assets/images/portfolio-23 .png",
+    image: "../images/portfolio-23 .png",
     description:
       "A modern animated portfolio website showcasing skills, projects, and experience with smooth animations and responsive design.",
     technologies: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
