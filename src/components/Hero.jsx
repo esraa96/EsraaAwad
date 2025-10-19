@@ -146,7 +146,7 @@ skills: ["HTML&CSS","JavaScript","React.js","Next.js","Flutter","Tailwind&Bootst
                 </span>
               </a>
               <a
-                href="/esraa-awad-cv.pdf"
+                href="https://drive.google.com/file/d/1Nvv8NPjtbhxm3Y8_JMfBEHM6wtyotXzf/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center gap-2 bg-gray-800 border border-pink-400/50 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:border-pink-400 hover:shadow-[0_0_25px_rgba(244,114,182,0.5)]"
