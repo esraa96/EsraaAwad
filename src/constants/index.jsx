@@ -116,7 +116,6 @@ export const SKILLS_DATA = [
       { name: "Source Control", icon: <FaCodeBranch className="text-gray-400" /> },
       { name: "Agile", icon: <FaSyncAlt className="text-blue-400" /> },
       { name: "Jest", icon: <SiJest className="text-red-600" /> },
-      { name: "Webpack", icon: <SiWebpack className="text-sky-600" /> },
       { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
       { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
       { name: "Vercel", icon: <SiVercel className="text-white" /> },
